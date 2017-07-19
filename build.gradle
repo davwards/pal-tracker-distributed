@@ -2,6 +2,10 @@ import io.pivotal.pal.tracker.gradlebuild.DependenciesGraphPlugin
 
 buildscript {
     ext {
+        springCloudVersion = "1.2.1.RELEASE"
+        springCloudDependenciesVersion = "Camden.SR6"
+        springCloudServicesVersion = "1.3.1.RELEASE"
+
         springBootVersion = "1.5.3.RELEASE"
         springVersion = "4.3.8.RELEASE"
         mysqlVersion = "6.0.6"
