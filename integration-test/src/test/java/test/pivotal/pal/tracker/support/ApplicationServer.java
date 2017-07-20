@@ -36,6 +36,7 @@ public class ApplicationServer {
         String dbUrl = "jdbc:mysql://localhost:3306/" + dbName + "?useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false";
 
         start(envMapBuilder()
+                .put("REGISTRATION_SERVER_ENDPOINT", "http://registration-server")
                 .put("SPRING_ZIPKIN_ENABLED", "false")
                 .put("APPLICATION_OAUTH_ENABLED", "false")
                 .put("SPRING_DATASOURCE_URL", dbUrl)
